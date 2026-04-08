@@ -1,3 +1,5 @@
+import Editor from "@monaco-editor/react"
+
 export default function App() {
   return (
     <div className='min-h-screen bg-slate-50 text-slate-900 p-4 md:p-8'>
@@ -44,9 +46,17 @@ export default function App() {
 
           {/* Textarea Area */}
           <div className='p-2'>
-            <textarea
-              className='w-full h-64 p-6 font-mono text-sm text-slate-700 bg-transparent focus:outline-none resize-none placeholder:text-slate-300'
-              placeholder='// Paste your code here...'></textarea>
+              <Editor
+                height="300px"
+                defaultLanguage="javascript"
+                options={{
+                  minimap: { enabled: false },
+                  fontSize: 14,
+                  wordWrap: "on",
+                  suggestOnTriggerCharacters: true,
+                  quickSuggestions: true
+                }}
+              />
           </div>
 
           {/* Action Footer */}
