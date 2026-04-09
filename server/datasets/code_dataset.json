@@ -1,0 +1,62 @@
+[
+  {
+    "language": "javascript",
+    "code": "import React, { useState } from 'react';\n\nconst App = () => {\n  const [count, setCount] = useState(0);\n  return <div onClick={() => setCount(count + 1)}>{count}</div>;\n};"
+  },
+  {
+    "language": "javascript",
+    "code": "document.querySelectorAll('.btn').forEach(button => {\n  button.addEventListener('click', function() {\n    console.log('Clicked!');\n  });\n});"
+  },
+  {
+    "language": "javascript",
+    "code": "const totals = items\n  .filter(item => item.isActive)\n  .map(item => item.price * item.quantity)\n  .reduce((acc, curr) => acc + curr, 0);"
+  },
+  {
+    "language": "javascript",
+    "code": "fetch('https://api.example.com/data')\n  .then(response => response.json())\n  .then(data => console.log(data))\n  .catch(error => console.error('Error:', error));"
+  },
+  {
+    "language": "javascript",
+    "code": "app.get('/api/users', async (req, res) => {\n  const users = await User.find();\n  res.json(users);\n});"
+  },
+  {
+    "language": "php",
+    "code": "<?php\necho \"Hello, World!\";\n?>"
+  },
+  {
+    "language": "php",
+    "code": "<?php\n$stmt = $pdo->prepare('SELECT * FROM users WHERE email = ?');\n$stmt->execute([$email]);\n$user = $stmt->fetch();\n?>"
+  },
+  {
+    "language": "php",
+    "code": "<?php\nclass User {\n  public $name;\n  public function __construct($name) {\n    $this->name = $name;\n  }\n}\n?>"
+  },
+  {
+    "language": "php",
+    "code": "<?php\n$fruits = array(\"Apple\", \"Banana\", \"Cherry\");\nforeach ($fruits as $fruit) {\n  echo $fruit . \"<br>\";\n}\n?>"
+  },
+  {
+    "language": "php",
+    "code": "<?php\npublic function store(Request $request) {\n  $validated = $request->validate([\n    'title' => 'required|max:255',\n    'body' => 'required',\n  ]);\n  Post::create($validated);\n  return redirect('/posts');\n}\n?>"
+  },
+  {
+    "language": "python",
+    "code": "from fastapi import FastAPI\n\napp = FastAPI()\n\n@app.get('/')\ndef read_root():\n    return {'Hello': 'World'}"
+  },
+  {
+    "language": "python",
+    "code": "import pandas as pd\nimport numpy as np\n\ndf = pd.read_csv('data.csv')\ndf['normalized'] = df['value'] / df['value'].max()\nprint(df.head())"
+  },
+  {
+    "language": "python",
+    "code": "def get_even_squares(numbers):\n    return [n**2 for n in numbers if n % 2 == 0]"
+  },
+  {
+    "language": "python",
+    "code": "class SimpleClassifier:\n    def __init__(self):\n        self.weights = []\n    def fit(self, X, y):\n        pass\n    def predict(self, X):\n        return [0] * len(X)"
+  },
+  {
+    "language": "python",
+    "code": "import requests\nfrom bs4 import BeautifulSoup\n\nres = requests.get('http://example.com')\nsoup = BeautifulSoup(res.text, 'html.parser')\nprint(soup.title.text)"
+  }
+]
