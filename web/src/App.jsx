@@ -55,8 +55,11 @@ export default function App() {
               CodeLens<span className='text-indigo-600'>.</span>
             </h1>
           </div>
-          <div className='text-xs font-semibold text-slate-400 bg-white px-3 py-1 rounded-full border border-slate-200 shadow-sm'>
-            AI DETECTOR
+          <div className='font-semibold text-slate-400 bg-white px-3 py-1 rounded-full border border-slate-200 shadow-sm hover:text-slate-800'>
+            <a href='https://github.com/evanalifian/code-lens' target='_blank'>
+              <i class='ri-github-fill'></i>{' '}
+              GitHub
+            </a>
           </div>
         </header>
 
